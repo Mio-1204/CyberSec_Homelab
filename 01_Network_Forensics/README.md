@@ -17,7 +17,7 @@ The attacker initiated their internal network reconnaissance from Bob's Windows 
 * **Port Scanning:** Traffic analysis utilizing Wireshark filters (`tcp.flags.syn == 1 and tcp.flags.ack == 0`) identified a series of Nmap TCP SYN (Stealth) scans. The window sizes (`Win = 1024, 2048, 3072, 4096`) confirmed the Nmap fingerprint.
 * **Targets:** The scans originating from `.26` targeted Sarah's Ubuntu workstation (`.27`), the Admin Server (`.28`), and the DHCP/FTP Server (`.5`).
 
-![Port Scan Evidence](port_scan.png)
+![Port Scan Evidence](images/port_scan.png)
 
 **Web Server Reconnaissance:** Following the port scans, the threat actor utilized Bob's workstation (`.26`) to access the Admin Web Server (`.28`, running Apache/2.2.16). A standard HTTP GET request was captured requesting the `/contact.html` file using a Firefox 5.0 browser on Windows NT 5.1.
 
@@ -28,8 +28,8 @@ After identifying open ports, the attacker moved laterally from Bob's workstatio
 * **Compromised Credentials:** The attacker successfully logged in using the weak credentials `vilkp` / `password`.
 * **Privilege Escalation:** Once logged into `.27`, the attacker used the same password to execute commands with root privileges (e.g., `sudo nmap -sS -O 192.168.100.28`), effectively masking their original IP and bypassing perimeter defenses.
 
-![Transcript Evidence](transcript_1.png)
-![Transcript Evidence](transcript_2.png)
+![Transcript Evidence](images/transcript_1.png)
+![Transcript Evidence](images/transcript_2.png)
 
 ## 4. Data Exfiltration
 Operating from the compromised Ubuntu machine (`.27`), the attacker targeted the Windows DHCP/FTP server (`.5`).
@@ -38,7 +38,7 @@ Operating from the compromised Ubuntu machine (`.27`), the attacker targeted the
 * **Exfiltration:** The attacker executed the `LIST` command to map the directory, followed by the `RETR` command to successfully download the file `Budget.txt` to the `.27` machine.
 * **Session Termination:** The attacker subsequently closed the connection using the `QUIT` command.
 
-![Exfiltrated Data](Budget.txt.png)
+![Exfiltrated Data](images/Budget.txt.png)
 
 ## 5. Timeline of Events (2011-10-07)
 * **14:12:00 UTC:** Initial cleartext Telnet connection established from `.26` to `.27`.
