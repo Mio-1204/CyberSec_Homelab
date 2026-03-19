@@ -1,6 +1,18 @@
 # John's Cybersecurity Homelab
 
-Welcome to my active project repository. I am a recent graduate of the Information Technology program at York University. Holding a CompTIA Security+ certification, I am actively building practical skills in network forensics, threat detection, and log analysis through a dedicated virtual homelab.
+Welcome to my active project repository. I am an Information Technology graduate from York University holding a CompTIA Security+ certification. I am actively building practical skills in network forensics, threat detection, and log analysis through a dedicated virtual homelab to demonstrate hands-on readiness for full-time industry roles.
 
-## Table of Contents
+## Core Investigations & Projects
+*Comprehensive projects showcasing end-to-end analysis, professional reporting, and infrastructure setup.*
+
 * [Project 1: Network Forensics & Incident Response](./01_Network_Forensics) - *Investigated a .pcap file to track lateral movement and data exfiltration.*
+* [Project 2:] *Coming soon.*
+
+## Tactical Labs & Exercises
+*Focused, practical applications of specific cybersecurity tools, tactics, and procedures (TTPs).*
+
+* [Lab 1: Captured Network Traffic Analysis](./03_Traffic_Analysis) - *Coming soon.*
+* [Lab 2: Brute Force & Dictionary Attacks](./04_Brute_Force) - *Coming soon.*
+* [Lab 3: Man-in-the-Middle (MitM) Passive Attack](./05_MitM_Passive) - *Coming soon.*
+* [Lab 4: NetworkMiner Analysis](./06_NetworkMiner) - *Coming soon.*
+* [Lab 5: File Carving & Recovery](./07_File_Carving) - *Coming soon.*
