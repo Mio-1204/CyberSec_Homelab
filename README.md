@@ -11,7 +11,7 @@ Welcome to my active project repository. I am an Information Technology graduate
 ## Tactical Labs & Exercises
 *Focused, practical applications of specific cybersecurity tools, tactics, and procedures (TTPs).*
 
-* [Lab 1: Captured Network Traffic Analysis](./L1_Traffic_Analysis) - *Coming soon.*
+* [Lab 1: Captured Network Traffic Analysis](./L1_Traffic_Analysis) - *Used Wireshark to analyze TCP handshakes, cumulative ACKs, and network throughput.*
 * [Lab 2: Brute Force & Dictionary Attacks](./L2_Brute_Force) - *Coming soon.*
 * [Lab 3: Man-in-the-Middle (MitM) Passive Attack](./L3_MitM_Passive) - *Coming soon.*
 * [Lab 4: NetworkMiner Analysis](./L4_NetworkMiner) - *Coming soon.*
