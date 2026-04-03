@@ -29,6 +29,7 @@ Next, I wanted to see if the network was struggling at all by looking for packet
 * **Receiver Throttling:** The server's starting receiver buffer (Win) was set to 1,460 bytes. It actually had to throttle the sender pretty early on. Around Packet 7, the buffer filled up, which threw a `[TCP Window Full]` flag in Wireshark. This forced the client to pause transmission for a moment until the server could catch up and process the queued data.
 
 ![TCP Window Full Flag](./images/window_full.png)
+![TCP Window Full Flag2](./images/window_full2.png)
 *Figure 2: Wireshark identifying the TCP Window Full bottleneck at Packet 7.*
 
 * **Packet Loss & Retransmission:** Even with that temporary bottleneck, the connection was super solid. I didn't catch any retransmissions. I proved this by tracking the Sequence Numbers, as they increased monotonically (e.g., 625 -> 1461 -> 2721) without any repeating sequence values.
