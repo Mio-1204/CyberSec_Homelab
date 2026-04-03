@@ -37,10 +37,10 @@ Next, I wanted to see if the network was struggling at all by looking for packet
 ## 4. Acknowledgment Mechanisms & Throughput
 To finish up, I looked at how the server was acknowledging the data and calculated the actual speed of the connection.
 
-* **Cumulative ACKs:** Usually, the server acknowledged one full segment (1,260 bytes) at a time. But it also used cumulative ACKs to keep traffic efficient. A great example of this is at Packet 89, where the ACK number jumped by exactly 2,520 bytes. This proves the server successfully acknowledged two 1,260-byte segments at the exact same time.
+* **Cumulative ACKs:** Usually, the server acknowledged one full segment (1,260 bytes) at a time. But it also used cumulative ACKs to keep traffic efficient. A great example of this is at Packet 89 and 90, where the ACK number jumped by exactly 2,520 bytes. This proves the server successfully acknowledged two 1,260-byte segments at the exact same time.
 
 ![Cumulative ACK capture](./images/cumulative_ack.png)
-*Figure 3: Tracking the acknowledgment jump in Packet 89.*
+*Figure 3: Tracking the acknowledgment jump in Packet 88 > 89 > 90.*
 
 * **Overall Throughput:** I clocked the connection throughput at about **22.4 KB/sec** (~22,383 bytes/sec). 
   * *The Math:* I took the total data transferred (Ack 152997 - Seq 1 = 152,996 bytes) and divided it by the total time the transfer took (6.951s - 0.116s = 6.835 seconds).
