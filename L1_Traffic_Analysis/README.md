@@ -9,7 +9,7 @@ Looking at the trace, it's a standard client-server setup running over unencrypt
 * **Target Server:** `gaia.cs.umass.edu` | IP: `128.119.245.12` | Port: `80`
 * **Source Client:** IP: `131.212.31.167` | Ephemeral Port: `2096`
 
-I verified that the connection was set up using a proper TCP 3-way handshake. The client kicked things off with a relative Sequence Number of `0` (you can see the `SYN` flag set to 1 in the TCP header). The server then hit back with a `SYN-ACK` segment, setting the acknowledgment value to `1` and its own initial Sequence Number to `0`.
+I verified that the connection was set up using a proper TCP 3-way handshake. The client kicked things off with a relative Sequence Number of `0` (the `SYN` flag set to 1 in the TCP header). The server then hit back with a `SYN-ACK` segment, setting the acknowledgment value to `1` and its own initial Sequence Number to `0`.
 
 ![TCP 3-Way Handshake in Wireshark](./images/handshake.png)
 *Figure 1: The initial SYN and SYN-ACK packets establishing the connection.*
