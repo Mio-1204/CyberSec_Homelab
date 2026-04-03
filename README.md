@@ -5,14 +5,14 @@ Welcome to my active project repository. I am an Information Technology graduate
 ## Core Investigations & Projects
 *Comprehensive projects showcasing end-to-end analysis, professional reporting, and infrastructure setup.*
 
-* [Project 1: Network Forensics & Incident Response](./01_Network_Forensics) - *Investigated a .pcap file to track lateral movement and data exfiltration.*
+* [Project 1: Network Forensics & Incident Response](./P1_Network_Forensics) - *Investigated a .pcap file to track lateral movement and data exfiltration.*
 * [Project 2:] *Coming soon.*
 
 ## Tactical Labs & Exercises
 *Focused, practical applications of specific cybersecurity tools, tactics, and procedures (TTPs).*
 
-* [Lab 1: Captured Network Traffic Analysis](./03_Traffic_Analysis) - *Coming soon.*
-* [Lab 2: Brute Force & Dictionary Attacks](./04_Brute_Force) - *Coming soon.*
-* [Lab 3: Man-in-the-Middle (MitM) Passive Attack](./05_MitM_Passive) - *Coming soon.*
-* [Lab 4: NetworkMiner Analysis](./06_NetworkMiner) - *Coming soon.*
-* [Lab 5: File Carving & Recovery](./07_File_Carving) - *Coming soon.*
+* [Lab 1: Captured Network Traffic Analysis](./L1_Traffic_Analysis) - *Coming soon.*
+* [Lab 2: Brute Force & Dictionary Attacks](./L2_Brute_Force) - *Coming soon.*
+* [Lab 3: Man-in-the-Middle (MitM) Passive Attack](./L3_MitM_Passive) - *Coming soon.*
+* [Lab 4: NetworkMiner Analysis](./L4_NetworkMiner) - *Coming soon.*
+* [Lab 5: File Carving & Recovery](./L5_File_Carving) - *Coming soon.*
