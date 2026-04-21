@@ -7,7 +7,7 @@ In this lab, I executed a **Passive Man-in-the-Middle (MitM)** attack using **AR
 To simulate a network interception, I utilized three distinct virtual machines within a localized subnet:
 
 * **Victim 1 (Server):** A Windows VM (`10.0.2.4`) running `SlimFTPd` on Port 23.
-* **Victim 2 (Client):** An Ubuntu VM used to simulate a legitimate user accessing the FTP server.
+* **Victim 2 (Client):** An Ubuntu VM used to simulate a legitimate user accessing the FTP server (`ftp://10.0.2.4:23`).
 * **Attacker Machine:** A Kali Linux VM (`10.0.2.5`) acting as the interceptor.
 * **Network Gateway:** The virtual router (`10.0.2.1`) handling subnet traffic.
 
