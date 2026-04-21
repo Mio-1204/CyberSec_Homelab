@@ -11,8 +11,6 @@ To simulate a network interception, I utilized three distinct virtual machines w
 * **Attacker Machine:** A Kali Linux VM (`10.0.2.5`) acting as the interceptor.
 * **Network Gateway:** The virtual router (`10.0.2.1`) handling subnet traffic.
 
----
-
 ## 2. Attack Execution
 The attack followed a three-phase execution strategy: traffic forwarding, ARP cache poisoning, and credential sniffing.
 
@@ -34,15 +32,11 @@ When the Ubuntu client initiated a session, `dsniff` captured the cleartext cred
 ![dsniff Credential Capture](./images/dsniff_capture.png)
 *Figure 1: dsniff intercepting the cleartext credentials (bob / abc123) via the hijacked route.*
 
----
-
 ## 3. Network Analysis (tcpdump)
 While the attack was active, I monitored the `eth0` interface with `tcpdump` to verify the "gratuitous ARP" replies. The capture confirms a high-frequency stream of ARP packets originating from my Kali MAC, which is the primary indicator of an ongoing ARP spoofing attempt.
 
 ![ARP Spoofing Signatures](./images/tcpdump_arp.png)
 *Figure 2: tcpdump identifying the anomalous ARP reply frequency used to maintain the MitM position.*
-
----
 
 ## 4. Defensive Remediation
 To mitigate ARP-based Man-in-the-Middle attacks in production:
