@@ -22,9 +22,12 @@ Because the suspect communicated over unencrypted email, I successfully recovere
 *Figure 1: NetworkMiner automatically parsing and displaying the compromised SMTP credentials.*
 
 ### B. Communications & Flight Plans
-Analyzing the extracted email bodies provided direct evidence of the suspect's escape plan. They instructed their accomplice to bring two specific items:
-1. A fake passport
-2. A bathing suit
+Analyzing the extracted email bodies revealed two separate outbound messages that confirmed the suspect's flight intent and escape plan:
+
+* **Message 1 (Departure Confirmation):** Sent to `sec558@gmail.com` with the subject "lunch next week". The message body read: *"Sorry-- I can't do lunch next week after all. Heading out of town. Another time! -Ann"*
+* **Message 2 (Escape Instructions):** Sent to the accomplice (`mistersecretx@aol.com`). In this message, the suspect instructed them to bring two specific items for the meetup:
+    1. A fake passport
+    2. A bathing suit
 
 Based on the recovered messages, the rendezvous destination was identified as **Playa del Carmen, Mexico**.
 
