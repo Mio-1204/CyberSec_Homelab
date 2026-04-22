@@ -18,7 +18,7 @@ Because the suspect communicated over unencrypted email, I successfully recovere
 * **Account Password:** `558r00lz`
 * **Accomplice Email:** `mistersecretx@aol.com`
 
-![NetworkMiner Credentials](./images/networkminer_credentials.png)
+![NetworkMiner Credentials](./images/networkminer_credentials.png)<br>
 *Figure 1: NetworkMiner automatically parsing and displaying the compromised SMTP credentials.*
 
 ### B. Communications & Flight Plans
@@ -32,8 +32,8 @@ Analyzing the extracted email bodies revealed two separate outbound messages tha
 
 Based on the recovered messages, the rendezvous destination was identified as **Playa del Carmen, Mexico**.
 
-![Rendezvous Document Content_1](./images/rendezvous_document_1.png)
-![Rendezvous Document Content_2](./images/rendezvous_document_2.png)
+![Rendezvous Document Content_1](./images/rendezvous_document_1.png)<br>
+![Rendezvous Document Content_2](./images/rendezvous_document_2.png)<br>
 *Figure 2: The contents of the intercepted communications revealing the rendezvous location and escape instructions.*
 
 ### C. File Extraction & Cryptographic Hashing
@@ -42,7 +42,7 @@ The suspect also transmitted a document containing further rendezvous details. N
 * **Extracted File Name:** `secretrendezvous.docx`
 * **Attachment MD5:** `9e423e11db88f01bbff81172839e1923`
 
-![NetworkMiner Extracted Files](./images/networkminer_files.png)
+![NetworkMiner Extracted Files](./images/networkminer_files.png)<br>
 *Figure 3: The carved secretrendezvous.docx file extracted directly from the network traffic.*
 
 #### Advanced Artifact Recovery (Embedded Media)
@@ -54,7 +54,7 @@ After changing the extension to `.zip` and extracting the contents, I navigated 
 
 * **Embedded Image MD5:** `AADEACE50997B1BA24B09AC2EF1940B7`
 
-![PowerShell Hash Extraction](./images/powershell_md5.png)
+![PowerShell Hash Extraction](./images/powershell_md5.png)<br>
 *Figure 4: Utilizing PowerShell to manually calculate the MD5 hash of the nested image artifact.*
 
 ## 3. Conclusion & Takeaways
