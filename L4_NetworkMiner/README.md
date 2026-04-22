@@ -25,13 +25,15 @@ Because the suspect communicated over unencrypted email, I successfully recovere
 Analyzing the extracted email bodies revealed two separate outbound messages that confirmed the suspect's flight intent and escape plan:
 
 * **Message 1 (Departure Confirmation):** Sent to `sec558@gmail.com` with the subject "lunch next week". The message body read: *"Sorry-- I can't do lunch next week after all. Heading out of town. Another time! -Ann"*
+    1. Sat, Oct. 10, 2009 - 07:35:30 (3 minutes before the second message).
 * **Message 2 (Escape Instructions):** Sent to the accomplice (`mistersecretx@aol.com`). In this message, the suspect instructed them to bring two specific items for the meetup:
     1. A fake passport
     2. A bathing suit
 
 Based on the recovered messages, the rendezvous destination was identified as **Playa del Carmen, Mexico**.
 
-![Rendezvous Document Content](./images/rendezvous_document.png)
+![Rendezvous Document Content_1](./images/rendezvous_document_1.png)
+![Rendezvous Document Content_2](./images/rendezvous_document_2.png)
 *Figure 2: The contents of the intercepted communications revealing the rendezvous location and escape instructions.*
 
 ### C. File Extraction & Cryptographic Hashing
