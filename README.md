@@ -15,4 +15,4 @@ Welcome to my active project repository. I am an Information Technology graduate
 * [Lab 2: Brute Force & Dictionary Attacks](./L2_Brute_Force) - *Simulated a credential harvesting attack using Hydra to exploit cleartext FTP authentication and analyzed brute-force signatures in Wireshark.*
 * [Lab 3: Man-in-the-Middle (MitM) Passive Attack](./L3_MitM_Passive) - *Executed an ARP Poisoning attack to redirect local network traffic and intercepted cleartext credentials using dsniff.*
 * [Lab 4: NetworkMiner Analysis](./L4_NetworkMiner) - *Utilized NetworkMiner to parse a forensic packet capture, extracting cleartext SMTP credentials and carving embedded file artifacts.*
-* [Lab 5: File Carving & Recovery](./L5_File_Carving) - *Coming soon.*
+* [Lab 5: File Carving & Recovery](./L5_File_Carving) - *Established chain of custody via md5deep and utilized bulk_extractor and Okteta to carve, filter, and analyze raw hexadecimal artifacts from a USB disk image.*
