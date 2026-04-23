@@ -1,4 +1,4 @@
-# John's Cybersecurity Homelab
+# John Laurence Mislang: Cybersecurity Homelab
 
 Welcome to my active project repository. I am a recent *Summa Cum Laude* graduate from York University majoring in Information Technology and holding a CompTIA Security+ certification. I am actively building practical skills in network forensics, threat detection, and log analysis through a dedicated virtual home lab to demonstrate hands-on readiness for tech industry roles.
 
